@@ -36,6 +36,6 @@ regions:
 libraries: 
   - govbr/govbr
 
-version: '1.0.0'
+version: '1.0.1'
 project: 'govbr'
 datestamp: 1693588445

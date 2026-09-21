@@ -1,6 +1,6 @@
 # Govbr Intranet
 
-Versão: **1.0.0**. Identificador interno do tema: `govbr`.
+Versão: **1.0.1**. Identificador interno do tema: `govbr`.
 
 Adaptação do tema GOVBR para uso na intranet, com pequenos ajustes para o Drupal 11.
 

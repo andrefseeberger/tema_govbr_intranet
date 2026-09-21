@@ -240,6 +240,10 @@ header .cabecalho p {
     font-size: .8rem;
 }
 
+#menuTotalFixo .header-baixo .logo > img {
+    max-height: 100px;
+}
+
 #menuTotalFixo .header-baixo .cabecalho {
     padding-left: 15px;
 }
