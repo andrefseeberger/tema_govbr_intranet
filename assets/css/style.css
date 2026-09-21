@@ -223,7 +223,7 @@ main h2:not(nav h2)::before,
 main h2:not(nav h2)::after {
     content: "";
     flex: 1;
-    height: 1px;
+    height: 2px !important;
     background: var(--cor-nona) !important;
     margin: 0 10px;
 }
@@ -238,6 +238,29 @@ header .cabecalho p {
     text-transform: uppercase;
     font-weight: 700;
     font-size: .8rem;
+}
+
+#menuTotalFixo .header-baixo .cabecalho {
+    padding-left: 15px;
+}
+
+#menuTotalFixo .header-baixo .cabecalho > p {
+    margin: 0;
+}
+
+.form-required::after {
+    color: #F00;
+    content: "*";
+    font-size: 1.5rem;
+    line-height: 0;
+}
+
+.conteudo-artigos img {
+    cursor: pointer;
+}
+
+.conteudo-artigos > div:last-of-type {
+    margin-top: 30px;
 }
 
 body,
