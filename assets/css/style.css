@@ -639,15 +639,15 @@ header .menu-list a {
 }
 
 .barra-menus .container nav>h2::before {
-    content: url("/siteintranet/themes/govbr/assets/img/itens-menu/links-uteis.svg");
+    content: url("../img/itens-menu/links-uteis.svg");
 }
 
 .barra-menus .container nav:first-child>h2:before {
-    content: url("/siteintranet/themes/govbr/assets/img/itens-menu/servicos.svg");
+    content: url("../img/itens-menu/servicos.svg");
 }
 
 .barra-menus .container nav:last-child>h2:before {
-    content: url("/siteintranet/themes/govbr/assets/img/itens-menu/hotlinks.svg");
+    content: url("../img/itens-menu/hotlinks.svg");
 }
 
 .barra-menus nav>h2 {
@@ -1209,7 +1209,7 @@ div#sliding-popup .eu-cookie-withdraw-banner,
 }
 
 .servico-em-destaque .conteudo-colunas h3 a::before {
-    content: url('/siteintranet/themes/govbr/assets/img/seta-de-acesso.png');
+    content: url('../img/seta-de-acesso.png');
     position: absolute;
     top: 13px;
     right: 25px;

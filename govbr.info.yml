@@ -2,11 +2,11 @@
 # Desenvolvido por Wallace Tavares
 
 
-name: Govbr
+name: 'Govbr Intranet'
 description: 'Este tema foi desenvolvido exclusivamente para sites oficiais do Governo Federal'
 type: theme
 base theme: stable9
-core_version_requirement: ^9 || ^10
+core_version_requirement: ^9 || ^10 || ^11
 package: Core
 
 regions:
@@ -36,6 +36,6 @@ regions:
 libraries: 
   - govbr/govbr
 
-version: '2.1-homolog'
+version: '0.1-alpha'
 project: 'govbr'
 datestamp: 1693588445
