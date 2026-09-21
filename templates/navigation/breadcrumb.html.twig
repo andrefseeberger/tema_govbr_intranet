@@ -1,0 +1,17 @@
+<nav role="navigation" aria-labelledby="system-breadcrumb">
+  <h2 id="system-breadcrumb" class="visually-hidden">{{ 'Breadcrumb'|t }}</h2>
+  <ol class="breadcrumb">
+    <li>
+      <a href="{{ url('<front>') }}"><i class="fa-solid fa-house"></i></a>
+    </li>
+    {% for item in breadcrumb|without('0') %}
+      <li{{ item.attributes.addClass(item.invisible ? 'visually-hidden') }}  class="item-breadcrumb">
+        {% if item.url %}
+          <a href="{{ item.url }}">{{ item.text|split(' ')|slice(0, 5)|join(' ') }}</a>
+        {% else %}
+          {{ item.text|split(' ')|slice(0, 5)|join(' ') }}
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ol>
+</nav>

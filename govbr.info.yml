@@ -1,0 +1,41 @@
+# Para colocar icone/link de Alto contraste, é só colocar o link como #altocontraste
+# Desenvolvido por Wallace Tavares
+
+
+name: Govbr
+description: 'Este tema foi desenvolvido exclusivamente para sites oficiais do Governo Federal'
+type: theme
+base theme: stable9
+core_version_requirement: ^9 || ^10
+package: Core
+
+regions:
+  topbar_esquerda: 'Topbar Esquerda'
+  topbar_direita: 'Topbar Direita'
+  header_cima_esquerda: 'Header Cima Esquerda'
+  header_cima_direita: 'Header Cima Direita'
+  header_baixo_direita: 'Header Baixo Direita'
+  menu_barras: 'Barra de menus'
+  menu_primario: 'Menu Primario'
+  content: 'Conteúdo'
+  footer_barra_cima: 'Footer Barra Cima'
+  footer_coluna_um: 'Footer Coluna 1'
+  footer_coluna_dois: 'Footer Coluna 2'
+  footer_coluna_tres: 'Footer Coluna 3'
+  footer_coluna_quatro: 'Footer Coluna 4'
+  footer_coluna_cinco: 'Footer Coluna 5'
+  footer_barra_esquerda: 'Footer Barra Baixo Esquerda'
+  footer_barra_direita: 'Footer Barra Baixo Direita'
+  footer_copyright: 'Footer Copyright'
+  barra_cima: 'Barra Cima'
+  barra_baixo_esquerda_artigos: 'Barra Baixo Esquerda Artigos'
+  barra_baixo_direita_artigos: 'Barra Baixo Direita Artigos'
+
+
+
+libraries: 
+  - govbr/govbr
+
+version: '2.1-homolog'
+project: 'govbr'
+datestamp: 1693588445

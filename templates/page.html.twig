@@ -1,0 +1,31 @@
+<section class="top-bar" id="topbar">
+	{% include '@govbr/templates/sections/topbar.html.twig' %}
+</section>
+<header>
+	{% include '@govbr/templates/sections/header.html.twig' %}
+</header>
+
+{% if page.menu_barras is not empty %}
+	<div class="barra-menus py-1">
+		<div class="container justify-content-sb">
+			{{ page.menu_barras }}
+		</div>
+	</div>
+{% endif %}
+
+<main class="pb-5 pt-3">
+	{% include '@govbr/templates/sections/main.html.twig' %}
+
+	{% if page.barra_baixo_esquerda_artigos is not empty or page.barra_baixo_direita_artigos is not empty %}
+		<section class="barra-baixo">
+			{% include '@govbr/templates/sections/barrabaixo.html.twig' %}
+		</section>
+	{% endif %}
+</main>
+<footer class="pt-5">
+	{% include '@govbr/templates/sections/footer.html.twig' %}
+</footer>
+
+{# {% if node.bundle %}
+  <p>O tipo de conteúdo desta página é: {{ node.bundle }}</p>
+{% else %} #}

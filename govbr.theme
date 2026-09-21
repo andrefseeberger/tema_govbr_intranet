@@ -1,0 +1,10 @@
+<?php
+
+/**
+  *Este tema foi desenvolvido pela empresa Websis. Todo código é de total autonomia.
+ */
+function govbr_preprocess_page(&$variables) {
+  $variables['site_name'] = \Drupal::config('system.site')->get('name');
+  $variables['logo'] = theme_get_setting('logo.url');
+  $variables['site_slogan'] = \Drupal::config('system.site')->get('slogan');
+}

@@ -1,0 +1,33 @@
+<div class="container d-flex flex-column">
+{{ page.barra_cima }}
+
+{% if not is_front and (node.bundle == 'article' or node.bundle == 'agenciadenoticias') %}
+	<div class="barra-artigos py-1 border-top border-bottom d-flex align-items-center justify-content-between">
+		<div class="barra-esquerda">
+			<ul>
+				<li>Publicado em
+					{{ node.created.value|date('d/m/Y - H:i') }}</li>
+				<li>Atualizado em
+					{{ node.getChangedTime()|date('d/m/Y - H:i') }}</li>
+			</ul>
+		</div>
+		<div class="barra-direita d-flex align-items-center">
+			Compartilhe:<div id="share-buttons">
+				<button onclick="shareFacebook()">
+					<i class="fa-brands fa-facebook-f"></i>
+				</button>
+				<button onclick="shareTwitter()">
+					<i class="fa-brands fa-x-twitter"></i>
+				</button>
+				<button onclick="copyLink()">
+					<i class="fas fa-link"></i>
+				</button>
+				<div class="copy-message"></div>
+			</div>
+		</div>
+	</div>
+{% endif %}
+
+{{ page.content }}
+
+</div>
